@@ -15,8 +15,7 @@ namespace PvCadTestApplication.Models.Repositories
         /// </summary>
         /// <returns>シリーズマスタのレコード全件</returns>
         public List<DefaultModule> FindAll()
-        {
-            
+        {            
             using (connection = new SQLiteConnection("Data Source =" + databaseFile))
             {
                 connection.Open();

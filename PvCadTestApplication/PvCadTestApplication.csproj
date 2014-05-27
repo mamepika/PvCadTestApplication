@@ -85,6 +85,7 @@
     </Compile>
     <Compile Include="Models\Entities\DefaultModule.cs" />
     <Compile Include="Models\Entities\ModuleAngle.cs" />
+    <Compile Include="Models\Entities\RoofMaterial.cs" />
     <Compile Include="Models\Entities\RoofTopModuleSelect.cs" />
     <Compile Include="Models\Entities\Series.cs" />
     <Compile Include="Models\Entities\SnowLevel.cs" />
@@ -93,11 +94,14 @@
     <Compile Include="Models\PvCadContext.cs" />
     <Compile Include="Models\Repositories\BaseRepository.cs" />
     <Compile Include="Models\Repositories\DefaultModuleRepository.cs" />
+    <Compile Include="Models\Repositories\RoofMaterialRepository.cs" />
     <Compile Include="Models\Repositories\RoofTopModuleAngleRepository.cs" />
     <Compile Include="Models\Repositories\RoofTopModuleSelectRepository.cs" />
     <Compile Include="Models\Repositories\SeriesRepository.cs" />
     <Compile Include="Models\Repositories\SnowLevelRepository.cs" />
+    <Compile Include="Models\Repositories\SupportMaterialRepository.cs" />
     <Compile Include="Models\Repositories\WindLevelRepository.cs" />
+    <Compile Include="Models\Services\ModuleSeriesCheckService.cs" />
     <Compile Include="Models\Services\RoofTopModuleTypeCheckService.cs" />
     <Compile Include="Models\WeatherConditions.cs" />
     <Compile Include="ViewModels\BaseViewModel.cs" />
