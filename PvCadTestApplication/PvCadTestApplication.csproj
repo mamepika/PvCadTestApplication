@@ -103,10 +103,12 @@
     <Compile Include="Models\Repositories\SeriesRepository.cs" />
     <Compile Include="Models\Repositories\SnowLevelRepository.cs" />
     <Compile Include="Models\Repositories\SupportMaterialRepository.cs" />
+    <Compile Include="Models\Repositories\SupportMaterialSetJoinRepository.cs" />
     <Compile Include="Models\Repositories\WindLevelRepository.cs" />
     <Compile Include="Models\Repositories\WorkLevelRepository.cs" />
     <Compile Include="Models\Services\ModuleSeriesCheckService.cs" />
     <Compile Include="Models\Services\RoofTopModuleTypeCheckService.cs" />
+    <Compile Include="Models\Services\WorkLevelSelectCheckService.cs" />
     <Compile Include="Models\WeatherConditions.cs" />
     <Compile Include="ViewModels\BaseViewModel.cs" />
     <Compile Include="ViewModels\MainWindowViewModel.cs" />

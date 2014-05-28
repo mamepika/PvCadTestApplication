@@ -35,8 +35,8 @@ namespace PvCadTestApplication.Models.Repositories
             {
                 RoofMaterial roofMaterial = new RoofMaterial();
 
-                roofMaterial.id = dataReader["ROOF_MAT_ID"].ToString();
-                roofMaterial.name = dataReader["ROOF_MAT_NAME"].ToString();
+                roofMaterial.roofMaterialId = dataReader["ROOF_MAT_ID"].ToString();
+                roofMaterial.roofMaterialName = dataReader["ROOF_MAT_NAME"].ToString();
                 roofMaterial.supportMaterialSetId = dataReader["SUPPORT_MAT_SET_ID"].ToString();
 
                 roofMaterials.Add(roofMaterial);

@@ -11,13 +11,13 @@ namespace PvCadTestApplication.Models.Repositories
     {
 
         /// <summary>
-        /// 
+        /// 条件に合致するレコードが存在するか
         /// </summary>
-        /// <param name="foundationHeight"></param>
-        /// <param name="snowLevel"></param>
-        /// <param name="windLevel"></param>
-        /// <param name="moduleAngleId"></param>
-        /// <returns></returns>
+        /// <param name="foundationHeight">設置高さ</param>
+        /// <param name="snowLevel">積雪レベル</param>
+        /// <param name="windLevel">風速レベル</param>
+        /// <param name="moduleAngleId">傾斜角</param>
+        /// <returns>レコードの有無</returns>
         public bool FindByCondition(int foundationHeight, 
                                                  string snowLevel,
                                                  string windLevel, 

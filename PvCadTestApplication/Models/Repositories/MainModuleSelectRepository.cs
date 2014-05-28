@@ -8,6 +8,6 @@ namespace PvCadTestApplication.Models.Repositories
 {
     class MainModuleSelectRepository : BaseRepository
     {
-        pu
+        
     }
 }
