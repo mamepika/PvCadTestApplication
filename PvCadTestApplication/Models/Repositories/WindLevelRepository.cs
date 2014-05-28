@@ -22,8 +22,8 @@ namespace PvCadTestApplication.Models.Repositories
                     using(dataReader = command.ExecuteReader()){
                         while(dataReader.Read()){
                             WindLevel windLevel = new WindLevel();
-                            windLevel.id = dataReader["WIND_LV_ID"].ToString();
-                            windLevel.name = dataReader["WIND_LV_NAME"].ToString();
+                            windLevel.windLevelId = dataReader["WIND_LV_ID"].ToString();
+                            windLevel.windLevelName = dataReader["WIND_LV_NAME"].ToString();
                             windLevels.Add(windLevel);
                         }                      
                     }                  

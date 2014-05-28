@@ -6,16 +6,16 @@ using System.Threading.Tasks;
 
 namespace PvCadTestApplication.Models.Entities
 {
-    public class WindLevel
+    class WorkLevel
     {
-        public string windLevelId { get; set; }
+        public string workLevelId { get; set; }
 
-        public string windLevelName { get; set; }
+        public string workLevelName { get; set; }
 
 
         public override string ToString()
         {
-            return "ID:" + this.windLevelId + ",NAME:" + this.windLevelName;
+            return "ID:" + this.workLevelId + ",NAME:" + this.workLevelName;
         }
     }
 }

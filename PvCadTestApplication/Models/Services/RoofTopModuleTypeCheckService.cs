@@ -55,7 +55,7 @@ namespace PvCadTestApplication.Models.Services
                     streamWriter.WriteLine(foundationHeight[i].ToString());
                     for (int j = 0; j < windLevels.Count(); j++)
                     {
-                        streamWriter.WriteLine("\t" + windLevels[j].id);
+                        streamWriter.WriteLine("\t" + windLevels[j].windLevelId);
                         for (int k = 0; k < snowLevels.Count(); k++)
                         {
                             streamWriter.WriteLine("\t" + "\t" + snowLevels[k].id);
@@ -65,7 +65,7 @@ namespace PvCadTestApplication.Models.Services
                                 streamWriter.Write("\t" + "\t" + "\t" + moduleAngles[l].id);
                                 for (int m = 0; m < moduleCount.Count(); m++) {
                                     string recordExitsts =
-                                        moduleSelectRepository.FindByCondition(foundationHeight[i], snowLevels[k].id, windLevels[j].id,moduleCount[m], moduleAngles[l].id) ? "○" : "×";
+                                        moduleSelectRepository.FindByCondition(foundationHeight[i], snowLevels[k].id, windLevels[j].windLevelId,moduleCount[m], moduleAngles[l].id) ? "○" : "×";
                                     if (m == 0)
                                     {
                                         streamWriter.Write("\t" + moduleCount[m] + "\t" + recordExitsts);
