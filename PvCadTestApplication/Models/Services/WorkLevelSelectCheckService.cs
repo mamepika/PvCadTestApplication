@@ -39,7 +39,13 @@ namespace PvCadTestApplication.Models.Services
             {
                 for (int j = 0; j < roofMaterials[i].supportMaterials.Count(); j++)
                 {
+                    for (int k = 0; k<windLevels.Count(); k++)
+                    {
+                        for (int l = 0; l < snowLevels.Count(); l++)
+                        {
 
+                        }
+                    }
                 }
             }
         }

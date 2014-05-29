@@ -82,5 +82,24 @@ namespace PvCadTestApplication.Models.Services
                 }
             }
         }
+        public void Check2()
+        {
+            RoofTopModuleSelectRepository moduleSelectRepository = new RoofTopModuleSelectRepository();
+            var moduleList = moduleSelectRepository.FindAll();
+            for (int i = 0; i < foundationHeight.Count(); i++)
+            {
+                var list = moduleList.FindAll(x => x.minimumHeight == foundationHeight[i].ToString());
+                WriteLog(list);
+            }
+
+        }
+
+        private void WriteLog(List<RoofTopModuleSelect> roofModules)
+        {
+            using (var streamWriter = new StreamWriter(@"C:\work\list.txt", true, encode))
+            {
+                roofModules.ForEach(x => streamWriter.WriteLine(x.ToString()));
+            }
+        }
     }
 }

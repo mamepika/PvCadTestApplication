@@ -36,9 +36,9 @@ namespace PvCadTestApplication
 
             RoofTopModuleTypeCheckService roofTopModuleTypeCheckService = new RoofTopModuleTypeCheckService();
 
-            roofTopModuleTypeCheckService.Check();
+            roofTopModuleTypeCheckService.Check2();
 
-            WorkLevelSelectCheckService workCheckService = new WorkLevelSelectCheckService();
+            //WorkLevelSelectCheckService workCheckService = new WorkLevelSelectCheckService();
             Console.WriteLine("完了");
         }
     }
